@@ -12,6 +12,7 @@
 	"extensions": [
 		"dbaeumer.vscode-eslint"
 	],
+	"postCreateCommand": "yarn install",
 	"forwardPorts": [8081, 19000, 19002, 19006],
 	"portsAttributes": {
 		"8081": {
