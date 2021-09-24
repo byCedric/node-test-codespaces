@@ -12,13 +12,16 @@
 	"extensions": [
 		"dbaeumer.vscode-eslint"
 	],
-	"forwardPorts": [8081, 19000, 19006],
+	"forwardPorts": [8081, 19000, 19002, 19006],
 	"portsAttributes": {
 		"8081": {
 			"label": "Metro bundler"
 		},
 		"19000": {
-			"label": "Expo dev server"
+			"label": "Expo server - MAKE ME PUBLIC"
+		},
+		"19002": {
+			"label": "Expo devtools"
 		},
 		"19006": {
 			"label": "Expo web"
