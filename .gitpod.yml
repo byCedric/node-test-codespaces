@@ -1,0 +1,23 @@
+tasks:
+  - init: yarn install
+    command: yarn start
+    openIn: bottom
+
+vscode:
+  extensions:
+    - dbaeumer.vscode-eslint
+
+ports:
+  # Metro bundler
+  - port: 8081
+    onOpen: ignore
+  # Expo bundler 
+  - port: 19000
+    onOpen: ignore
+    visibility: public
+  # Expo devtools
+  - port: 19002
+    onOpen: open-preview
+  # Expo web
+  - port: 19006
+    onOpen: open-preview
