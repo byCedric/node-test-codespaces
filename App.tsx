@@ -1,14 +1,12 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { StyleSheet, Text, View, Image } from 'react-native';
-
-const Icon = require('./assets/icon.png');
+import { StyleSheet, Text, View } from 'react-native';
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Image source={Icon} style={{ width: 100, height: 100 }} />
-      <Text>Hello from Codespaces!</Text>
+      <Text style={styles.emoji}>👋</Text>
+      <Text style={styles.greeting}>Hello from the cloud!</Text>
       <StatusBar style="auto" />
     </View>
   );
@@ -20,5 +18,13 @@ const styles = StyleSheet.create({
     backgroundColor: '#fff',
     alignItems: 'center',
     justifyContent: 'center',
+  },
+  emoji: {
+    fontSize: 72,
+    margin: 16,
+  },
+  greeting: {
+    fontSize: 18,
+    fontWeight: 'bold'
   },
 });
