@@ -17,6 +17,9 @@ ports:
   - port: 19000
     onOpen: ignore
     visibility: public # broken on iOS due to redirects not being followed
+  - port: 19001
+    onOpen: ignore
+    visibility: public
   # Expo devtools
   - port: 19002
     onOpen: ignore # broken because of websocket opening on localhost
