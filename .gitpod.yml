@@ -1,3 +1,5 @@
+image: bycedric/expo-gitpod
+
 tasks:
   - init: yarn install
     command: yarn start
@@ -14,10 +16,10 @@ ports:
   # Expo bundler 
   - port: 19000
     onOpen: ignore
-    visibility: public
+    visibility: public # broken on iOS due to redirects not being followed
   # Expo devtools
   - port: 19002
-    onOpen: open-preview
+    onOpen: ignore # broken because of websocket opening on localhost
   # Expo web
   - port: 19006
     onOpen: open-preview
