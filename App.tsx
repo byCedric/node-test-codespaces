@@ -6,7 +6,7 @@ export default function App() {
   return (
     <View style={styles.container}>
       <Text style={styles.emoji}>👋</Text>
-      <Text style={styles.greeting}>Hello cruzan</Text>
+      <Text style={styles.greeting}>Hello</Text>
       <StatusBar style="auto" />
     </View>
   );
