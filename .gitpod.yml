@@ -8,7 +8,7 @@ tasks:
 vscode:
   extensions:
     - dbaeumer.vscode-eslint
-    - https://github.com/expo/vscode-expo/releases/download/0.7.4/vscode-expo-0.7.4.vsix
+    - byCedric.vscode-expo
 
 ports:
   # Metro bundler
